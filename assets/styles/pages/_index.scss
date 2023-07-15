@@ -1,0 +1,214 @@
+header {
+  padding-top: 40px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      color: #fff;
+      max-width: 306px;
+
+      transition: all .5s ease-in-out;
+      background-size: 200% 100%;
+      background-image: linear-gradient(to right, #fff, #fff 50%, #f7b040 50%);
+      background-position: 0;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    li:hover {
+      cursor: pointer ;
+      background-position: -100%;
+    }
+  }
+}
+
+.profile {
+  padding: 72px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+
+    .content {
+      h1 {
+        color: #00FFA3;
+        text-align: end;
+      }
+
+      .btn {
+        text-align: end;
+        a {
+          color: #000;
+          font-size: var(--fz-p);
+          line-height: var(--lh-p);
+          padding: 12px 24px;
+          border-radius: 32px;
+          display: inline-flex;
+          margin-left: auto;
+
+          img {
+            margin-left: 4px;
+          }
+        }
+      }
+      
+    }
+    
+  }
+}
+
+.introduction {
+  padding: 160px 0;
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .content {
+      color: #fff;
+      width: 1px;
+      flex-grow: 1;
+
+      .little-imgs {
+        img:not(:last-of-type) {
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .imgs {
+      img {
+        margin-left: 24px;
+      }
+    }
+  }
+}
+
+.aboutMe {
+  padding: 160px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .faq {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      .item {
+        padding: 16px;
+        max-width: 306px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+      }
+      
+    }
+
+    .content {
+      max-width: 526px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.contactMe {
+  padding: 96px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: #fff;
+    }
+
+    .logos {
+      a:not(:last-of-type) {
+        margin-right: 20px;
+      }
+    }
+
+  }
+}
+
+.myProjects {
+  padding: 160px 0;
+
+  .container {
+
+    h2 {
+      text-align: center;
+
+      span {
+        margin-left: 260px;
+      }
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 24px;  
+
+        > div:first-of-type {
+          display: flex;
+
+          > img {
+            margin-right: 24px;
+          }
+
+          .context {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .btn {
+
+              a {
+                color: #fff;
+                font-size: var(--fz-p);
+                line-height: var(--lh-p);
+                padding: 12px 24px;
+                border-radius: 32px;
+                display: inline-flex;
+                margin-left: auto;
+      
+                img {
+                  margin-left: 4px;
+                }
+              }
+            }
+          }
+        }
+        
+        > div:last-of-type {
+          display: flex;
+          justify-content: space-between;
+
+          img:first-of-type {
+            margin-right: 24px; 
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  font-size: var(--fz-p);
+}

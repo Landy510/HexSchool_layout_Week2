@@ -131,11 +131,23 @@ header {
     }
 
     .logos {
+
       a:not(:last-of-type) {
         margin-right: 20px;
       }
-    }
 
+      a.discord img:hover {
+        filter: drop-shadow(0 0 10px #4e80ef);
+      }
+
+      a.instagram img:hover {
+        filter: drop-shadow(0 0 10px #ee5745);
+      }
+
+      a.whatApp img:hover {
+        filter: drop-shadow(0 0 10px #01db4e);
+      }
+    }
   }
 }
 

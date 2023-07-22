@@ -29,6 +29,7 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
 
     .content {
@@ -75,6 +76,11 @@ header {
       width: 1px;
       flex-grow: 1;
 
+      & > p {
+        font-size: var(--fz-h3);
+        // line-height: var(--lh-h3);
+      }
+
       .little-imgs {
         img:not(:last-of-type) {
           margin-right: 16px;
@@ -114,6 +120,11 @@ header {
     .content {
       max-width: 526px;
       flex-shrink: 0;
+
+      & > p {
+        font-size: var(--fz-h3);
+        // line-height: var(--lh-h3);
+      }
     }
   }
 }
